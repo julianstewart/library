@@ -14,15 +14,20 @@
 
     class BookTest extends PHPUnit_Framework_TestCase
     {
-        // tests whether a book can be added to the DB
-        function testGetBookName()
+        // tests whether a book title can be added to the DB
+        function testGetBookTitle()
         {
-            $book_name = "Call of the Wild";
-            $test_book = new Book($book_name);
+            //arrange
+            $book_title = "Call of the Wild";
+            $id = null;
+            $test_book_title = new Book($book_title, $id);
+            var_dump($book_title);
 
-            $result = $test_book->getBookName();
+            //act
+            $result = $test_book_title->getBookTitle();
 
-            $this->assertEquals($book_name, $result);
+            //assert
+            $this->assertEquals($book_title, $result);
         }
     }
 
