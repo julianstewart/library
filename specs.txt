@@ -1,0 +1,1 @@
+The user inputs "Call of the Wild." Input is saved to the database "card_catalog" in table "books" within the column "titles." 
