@@ -14,13 +14,13 @@
 
     class BookTest extends PHPUnit_Framework_TestCase
     {
+
         // tests whether a book title can be added to the DB
         function testGetBookTitle()
         {
             //arrange
-            $book_title = "Call of the Wild";
-            $id = null;
-            $test_book_title = new Book($book_title, $id);
+            $book_title = 'Call of the Wild';
+            $test_book_title = new Book($book_title);
             var_dump($book_title);
 
             //act
@@ -29,6 +29,7 @@
             //assert
             $this->assertEquals($book_title, $result);
         }
+
     }
 
 ?>

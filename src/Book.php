@@ -11,9 +11,9 @@
             $this->id = $id;
         }
 
-        function setBookTitle($new_book_title)
+        function getBookTitle()
         {
-            $this->book_title = (string) $new_book_title;
+            return $this->book_title;
         }
 
     }
