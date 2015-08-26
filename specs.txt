@@ -1,1 +1,5 @@
-The user inputs "Call of the Wild." Input is saved to the database "card_catalog" in table "books" within the column "titles." 
+The user inputs "Call of the Wild." Input is saved to the database "card_catalog" in table "books" within the column "book_title."
+
+The user inputs "Jack London." Input is saved to the database "card_catalog" in table "authors" within the column "author_name."
+
+The user inputs "Call of the Wild" and "Jack London." Inputs are saved to the database "card_catalog" in table "authors_books" within the columns "book_id" and "author_id."
